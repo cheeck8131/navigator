@@ -2,7 +2,7 @@
 import './tools';
 import { System } from './types';
 
-export const install = (rpc: any, env: 'client' | 'server') => {
+export const connect = (rpc: any, env: 'client' | 'server') => {
 	abstract class Service<
 		// @ts-ignore TODO: ServiceGenericType is user value
 		T extends System.ServicesType = ServiceGenericType
